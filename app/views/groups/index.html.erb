@@ -1,0 +1,31 @@
+<% if user_signed_in? && can?(:read, Group) %>
+  <%= render 'shared/flash'%>
+
+  <%= render 'shared/header', heading: 'Categories',  home_path: groups_path %>
+
+<ul class='list-unstyled d-flex flex-column gap-3 px-2'>
+  <% if user_signed_in? %>
+  <%= link_to "Sign Out", sign_out_user_path(@user), method: :delete, class: 'sign-out text-dark' %>
+  <% end %>
+  <% @groups.each do |group| %>
+   <%= link_to group_path(group) do %>
+    <li class='d-flex justify-content-between bg-white p-2 custom-text-color shadow scale-list-item'>
+      <div class='d-flex gap-2'>
+        <%= image_tag('pic-1.jpg', class: 'icon-image') %>
+        <div>
+          <p class='fw-medium'><%= group.name.capitalize %></p>
+          <p class='date-font-size fw-medium'><%= group.created_at.strftime('%d %B %Y')%></p>
+        </div>
+      </div>
+      <strong>$<%= group.sales.sum(:amount)%></strong>
+    </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%if @groups.empty?%>
+<p>No category added yet, click add category</p>
+<%end%>
+
+<div class='mt-5 w-100 add-category'><%= render 'shared/custom_btn', heading: 'add category', custom_path:  new_group_path%></div>
+<% end %>

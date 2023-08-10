@@ -1,0 +1,25 @@
+<div class='d-flex justify-content-between w-100 align-items-baseline p-1'>
+  <i class="fa-solid fa-signal text-dark"></i>
+  <i class="fa-solid fa-battery-three-quarters text-dark"></i>
+</div>
+<div class='d-flex flex-column min-vh-100 align-items-center justify-content-center'>
+  <div class='splash-heading slide-in'>
+    <h1>BudgetBuddy</h1>
+    <p>your ultimate budgeting companion</p>
+  </div>
+  <div class='justify-self-end interactions d-flex flex-column w-100 px-2 gap-2'>
+    <%= link_to 'LOG IN', new_user_session_path, class: 'btn btn-primary'%>
+    <%= link_to 'SIGN UP', new_user_registration_path, class: 'btn' %>
+  </div>
+</div>
+
+<style>
+  .interactions {
+    position: absolute;
+    bottom: 1em;
+  }
+
+  .interactions > * {
+    padding: 10px;
+  }
+</style>

@@ -1,15 +1,115 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+  --text-color: #434b54;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.splash-heading {
+  font-family: 'Courgette', cursive, sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.splash-heading > p {
+  font-size: 0.8rem;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  background-color: rgb(239, 239, 239);
+  overflow: hidden;
+}
+
+header {
+  background-color: #3778c2;
+}
+
+i {
+  color: white;
+}
+
+form:not(.new_user, .edit_user) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.custom-btn {
+  background-color: #5fb523;
+  width: 100%;
+  appearance: none;
+  border: none;
+  outline: none;
+  margin-top: auto;
+  padding: 1em;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-btn > * {
+  color: white;
+  border: 1px solid white;
+  padding: 0.78em;
+  display: inline-block;
+  width: 95%;
+  height: 50px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.custom-btn > *:hover {
+  color: black;
+  border-color: inherit;
+}
+
+.icon-image {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom-text-color {
+  color: var(--text-color);
+}
+
+.date-font-size {
+  font-size: 0.8rem;
+}
+
+.scale-list-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scale-list-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 3s ease-in-out;
+}
