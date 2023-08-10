@@ -1,0 +1,43 @@
+<%= render 'shared/flash'%>
+<%= render 'shared/header', heading: 'Transactions', home_path: groups_path%>
+
+<div class= 'd-flex flex-column w-100 align-items-center'>
+   <%= image_tag('pic-1.jpg', class: 'icon-image') %>
+  <strong class='mx-auto'>TOTAL PAYMENT - $<%=@group.sales.sum(:amount) %></strong>
+</div>
+<section class='px-3 mt-3'>
+  <% @sales.each do |sale| %>
+    <div class='d-flex flex-column mt-2'>
+      <h2 class='fs-0.25'><%= sale.name %></h2>
+      <strong>Transaction: #<%= sale.id %></strong>
+      <p>
+        <span>
+          <i class="fa-regular fa-calendar"></i>
+          <%= sale.created_at.strftime('%d %B %Y') %>
+        </span>
+        at 
+        <span>
+          <%= sale.created_at.strftime('%H:%M:%p')%>
+        </span>
+      </p>
+      <div class='fw-bold'>
+        <span >Amount:</span>
+        <span>$<%= sale.amount %></span>
+      </div>
+      <hr/>
+    </div>
+  <% end %>
+</section>
+
+<%if @sales.empty?%>
+<p>No transactions added yet, click add transaction</p>
+<%end%>
+
+<%= render 'shared/custom_btn', heading: 'add transaction', custom_path:  new_sale_path(group_id: params[:id])%>
+
+<style>
+
+  .fa-calendar {
+    color: #434b54;
+  }
+</style>
