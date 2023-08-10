@@ -14,7 +14,7 @@
 .splash-heading {
   font-family: 'Courgette', cursive, sans-serif;
   letter-spacing: 1.5px;
-   text-align: center;
+  text-align: center;
 }
 
 .splash-heading > p {
@@ -67,7 +67,6 @@ form:not(.new_user, .edit_user) {
   width: 95%;
   height: 50px;
   font-weight: bold;
-  transition: all 0.5 ease;
   background-color: transparent;
 }
 
@@ -104,6 +103,7 @@ form:not(.new_user, .edit_user) {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
