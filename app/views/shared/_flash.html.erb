@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+  <div class="d-flex alert alert-success justify-content-between">
+    <%= flash.now[:notice] %>
+  </div>
+<% elsif flash[:alert] %>
+  <div class="d-flex alert alert-danger justify-content-between">
+    <%= flash.now[:alert] %>
+  </div>
+<% end %>
