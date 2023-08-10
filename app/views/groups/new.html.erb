@@ -1,0 +1,16 @@
+<%= render 'shared/header', heading: 'Add Category', home_path: groups_path %>
+
+<%= form_with model: @group, method: :post, local: true do |f| %>
+  <div class="form-group mb-3">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control', required: true%>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :icon %>
+    <%= f.text_field :icon, class: 'form-control', required: true, placeholder: 'Please use an image address' %>
+  </div>
+    <div class='custom-btn'>
+      <%= f.submit 'Save'.upcase! %>
+    </div>
+<% end %>
