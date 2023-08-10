@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Group, type: :model do
-  let(:user) { create(:user) }   
+  let(:user) { create(:user) }
   let(:group1) { create(:group, author: user) }
-  
+
   describe 'validate attributes' do
     it 'should be valid with a name' do
       expect(group1).to be_valid

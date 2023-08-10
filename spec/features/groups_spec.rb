@@ -39,11 +39,11 @@ RSpec.feature 'Groups', type: :feature do
     group = create(:group, author: user)
 
     visit groups_path
-    
+
     within '.add-category' do
       click_link 'add category'.upcase!
     end
-    
+
 
     expect(page).to have_current_path(new_group_path)
 

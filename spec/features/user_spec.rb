@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-describe "the signin process", type: :feature do
+describe 'the signin process', type: :feature do
   before :each do
-    User.create(name: "Ike", email: 'user@example.com', password: 'password')
+    User.create(name: 'Ike', email: 'user@example.com', password: 'password')
   end
 
-  it "signs me in" do
+  it 'signs me in' do
     visit new_user_session_path
 
     fill_in 'Email', with: 'user@example.com'

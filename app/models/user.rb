@@ -7,5 +7,6 @@ class User < ApplicationRecord
   has_many :groups, foreign_key: :author_id, dependent: :destroy
 
   validates :name, presence: true
-  validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP, message: 'Not a valid email address' }
+  validates :email, presence: true, uniqueness: true,
+                    format: { with: URI::MailTo::EMAIL_REGEXP, message: 'Not a valid email address' }
 end

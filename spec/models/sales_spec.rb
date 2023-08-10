@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Sale, type: :model do
-  let(:user) { create(:user) }   
+  let(:user) { create(:user) }
   let(:group1) { create(:group, author: user) }
-  let(:sale1) {create(:sale, author:user, group: group1)}
-  
+  let(:sale1) { create(:sale, author: user, group: group1) }
+
   describe 'validate attributes' do
     it 'should be valid with a name' do
       expect(sale1).to be_valid

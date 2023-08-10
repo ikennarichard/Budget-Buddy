@@ -5,10 +5,10 @@ class ApplicationController < ActionController::Base
     sign_out current_user
     redirect_to root_path
   end
-  
+
   protected
 
-  def after_sign_in_path_for(resource)
+  def after_sign_in_path_for(_resource)
     groups_path
   end
 

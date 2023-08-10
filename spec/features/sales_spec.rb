@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature 'Sale', type: :feature do
   let(:user) { create(:user) }
   let(:group) { create(:group, author: user) }
-  let!(:sales) { create_list(:sale, 3, group: group, author: user) }
+  let!(:sales) { create_list(:sale, 3, group:, author: user) }
 
   it 'should display category details and transactions' do
     sign_in user
@@ -26,7 +26,7 @@ RSpec.feature 'Sale', type: :feature do
     end
   end
 
-  
+
   it 'should add a new transaction to a category' do
     sign_in user
 
@@ -35,10 +35,10 @@ RSpec.feature 'Sale', type: :feature do
     fill_in 'sale_name', with: 'New Transaction'
     fill_in 'sale_amount', with: 100.0
     select group.name, from: 'sale_group_id'
-    
+
     click_button 'SAVE'
 
     expect(page).to have_content('New Transaction')
-    expect(page).to have_content("$100.0")
+    expect(page).to have_content('$100.0')
   end
 end
