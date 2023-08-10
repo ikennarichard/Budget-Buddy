@@ -1,0 +1,18 @@
+<%= render 'shared/header', heading: 'Add Transaction', home_path: group_path(@group)%>
+
+<div class="form-group mt-4">
+  <%= form_with model: @sale, method: :post, local: true do |f| %>
+    <div class="mb-3">
+      <%= f.text_field :name, required: true, placeholder: "Name of Transaction", class: 'form-control' %>
+    </div>
+    <div class="mb-3">
+      <%= f.text_field :amount, required: true, placeholder: "Amount", class: 'form-control'%>
+    </div>
+    <div class="mb-3">
+      <%= f.select :group_id, @groups.collect { |group| [group.name, group.id] }, { :prompt => 'Select Category'}, class: "form-select", required: true %>
+    </div>  
+    <div class='custom-btn'>
+      <%= f.submit 'Save'.upcase!, class: 'bg-none'%>
+    </div>
+  <% end %>
+</div> 
