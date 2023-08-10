@@ -1,0 +1,51 @@
+<header class="mb-3 d-flex w-100 flex-column justify-content-between align-items-baseline gap-5 p-3">
+  <div class='d-flex justify-content-between w-100 align-items-baseline'>
+    <i class="fa-solid fa-signal"></i>
+    <i class="fa-solid fa-battery-three-quarters"></i>
+  </div>
+
+  <nav class='d-flex justify-content-between w-100 align-items-center'>
+      <div class="hamburger-icon d-flex flex-column gap-1"><span></span><span></span><span></span></div>
+    <h2 class='text-white custom-heading'><%= heading.upcase!%></h2>
+    <% if current_page?(groups_path) %>
+      <i class="fas fa-search"></i>
+    <% end %>
+    <% if !current_page?(groups_path) %>
+      <%= link_to home_path do %>
+      <i class="fa-solid fa-chevron-left"></i>
+      <%end%>
+    <%end%>
+  </nav>
+</header>
+
+<style>
+
+  nav > h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .dropdown {
+    background-color: darkslategray
+  }
+
+  .hamburger-icon {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+  }
+
+  .hamburger-icon span {
+  background: white;
+  }
+
+</style>
