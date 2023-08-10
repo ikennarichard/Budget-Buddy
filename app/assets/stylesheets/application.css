@@ -41,9 +41,9 @@ i {
 }
 
 form:not(.new_user, .edit_user) {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
 }
 
 .custom-btn {
@@ -52,7 +52,6 @@ form:not(.new_user, .edit_user) {
   appearance: none;
   border: none;
   outline: none;
-  margin-top: auto;
   padding: 1em;
   height: 80px;
   display: flex;
@@ -112,4 +111,10 @@ form:not(.new_user, .edit_user) {
 
 .slide-in {
   animation: slideIn 3s ease-in-out;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
