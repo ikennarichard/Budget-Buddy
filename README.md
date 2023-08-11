@@ -48,7 +48,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo](https://rich-bookstore.netlify.app/)
+[Live Demo](https://budget-buddy-j2ry.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
