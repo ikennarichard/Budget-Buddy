@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
     - [🚀 Live Demo](#live-demo)
+    - [ Video description](#video-description)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,6 +50,11 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 [Live Demo](https://budget-buddy-j2ry.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Video Description <a name="live-demo"></a>
+
 [Project Description](https://www.loom.com/share/8653d017edfb4ce59b4c79760943112f?sid=9ea18934-5404-432e-9052-17d99fea175d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
