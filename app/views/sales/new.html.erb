@@ -5,11 +5,13 @@
     <div class="mb-3">
       <%= f.text_field :name, required: true, placeholder: "Name of Transaction", class: 'form-control' %>
     </div>
-    <div class="mb-3">
-      <%= f.text_field :amount, required: true, placeholder: "Amount", class: 'form-control'%>
-    </div>
-    <div class="mb-3">
-      <%= f.select :group_id, @groups.collect { |group| [group.name, group.id] }, { :prompt => 'Select Category'}, class: "form-select", required: true %>
+    <div>
+      <div class="mb-3">
+        <%= f.text_field :amount, required: true, placeholder: "Amount", class: 'form-control'%>
+      </div>
+      <div class="mb-3">
+        <%= f.select :group_id, @groups.collect { |group| [group.name, group.id] }, { :prompt => 'Select Category'}, class: "form-select", required: true %>
+      </div>
     </div>  
     <div class='custom-btn'>
       <%= f.submit 'Save'.upcase!, class: 'bg-none'%>
