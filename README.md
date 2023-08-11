@@ -49,6 +49,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 [Live Demo](https://budget-buddy-j2ry.onrender.com)
+[Project Description](https://www.loom.com/share/8653d017edfb4ce59b4c79760943112f?sid=9ea18934-5404-432e-9052-17d99fea175d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
