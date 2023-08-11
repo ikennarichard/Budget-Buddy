@@ -124,7 +124,7 @@ Give a ⭐️ if you like this project!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
+-  Thanks to [Gregoire Vella](https://www.behance.net/gregoirevella) for his inspiring design on [Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=&)
 - [Microverse](https://www.microverse.org/)
 - Coding Partners
 
