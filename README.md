@@ -12,6 +12,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -40,6 +41,14 @@
 - Display transactions for each each category
 - Add category that you want to track
 - Add transactions for the category
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo](https://rich-bookstore.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

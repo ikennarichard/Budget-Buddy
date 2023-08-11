@@ -26,7 +26,6 @@ RSpec.feature 'Sale', type: :feature do
     end
   end
 
-
   it 'should add a new transaction to a category' do
     sign_in user
 
