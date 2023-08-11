@@ -13,7 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
     - [🚀 Live Demo](#live-demo)
-    - [ Video description](#video-description)
+    - [ Project Demo](#project-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -29,7 +29,9 @@
 
 # 📖 BudgetBuddy
 
->This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, which shows how much money you spent and on what. Built with Rails
+>This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, which shows how much money you spent and on what. Built with Rails.
+
+![homepage](./app/assets/images/budget-buddy-homepage.PNG)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,9 +55,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Video Description <a name="live-demo"></a>
+## 🎥 Project Demo <a name="project-demo"></a>
 
-[Project Description](https://www.loom.com/share/8653d017edfb4ce59b4c79760943112f?sid=9ea18934-5404-432e-9052-17d99fea175d)
+[Video Demo](https://www.loom.com/share/8653d017edfb4ce59b4c79760943112f?sid=9ea18934-5404-432e-9052-17d99fea175d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
